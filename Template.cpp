@@ -3,8 +3,8 @@ using namespace std;
 using ll = long long;
 using ull = unsigned long long;
 void fastIO() { ios_base::sync_with_stdio(false); cin.tie(nullptr); }
-template<class T> void _deb(T t) { cerr << t; }
 template<class... T> void read(T&... args) { ((cin >> args), ...); }
+template<class T> void _deb(T t) { cerr << t; }
 template<class... T> void deb(T... args) { ((cerr << args << ' '), ...); cerr << '\n'; }
 template<class T> void _deb(vector<T>& ar) {  cerr << "[ "; for(T t : ar) { _deb(t); cerr << " "; } cerr << "]\n"; }
 template<class T> void _deb(set<T>& s) {  cerr << "[ "; for(T t : s) { _deb(t); cerr << " "; } cerr << "]\n"; }
@@ -20,7 +20,7 @@ void solve() {
 }
 
 int main() {
-	#ifndef ONLINE_JUDGE
+#ifndef ONLINE_JUDGE
 	freopen("in", "r", stdin);
 	freopen("out", "w", stdout);
 	freopen("err", "w", stderr);
